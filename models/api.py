@@ -5,7 +5,6 @@ class APIGenerator:
         self.api_spec = json.loads(api_spec_json)
 
     def generate_fastapi_code(self):
-        """Dynamically generates a FastAPI backend."""
         base_url = self.api_spec["base_url"]
         endpoints = self.api_spec["endpoints"]
 
