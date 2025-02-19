@@ -1,0 +1,6 @@
+fastapi 
+uvicorn 
+neo4j 
+chromadb 
+sentence-transformers 
+requests
