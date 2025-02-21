@@ -4,3 +4,4 @@ neo4j
 chromadb 
 sentence-transformers 
 requests
+git
