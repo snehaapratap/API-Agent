@@ -20,3 +20,14 @@ async def generate_api_endpoint(request: Request):
     related_code = retrieve_code_for_prompt(prompt_text)
     api_code = generate_api(prompt_text, related_code)
     return {"api_code": api_code}
+
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
